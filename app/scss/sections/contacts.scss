@@ -5,15 +5,18 @@
   background-attachment: fixed;
   &__inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 60px 0;
     & form {
       display: flex;
       flex-direction: column;
+      background-color: rgba(128, 0, 128, 0.25);
+      padding: 20px 40px;
+      border-radius: 20px;
       & input,
       textarea {
         background-color: transparent;
-        border: 1px solid purple;
+        border: 1px solid gray;
       }
       & input {
         padding: 5px 10px;
@@ -41,11 +44,29 @@
     padding: 20px;
     box-shadow: 0px 15px 27px 9px rgba(7, 66, 110, 0.2);
     border: 1px solid purple;
+    .cv {
+      & a {
+        border-bottom: 1px dashed wheat;
+      }
+    }
   }
   &__socials {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 25px;
+    .socials__item {
+      margin-bottom: 22px;
+      & a {
+        display: flex;
+        align-items: center;
+        & div {
+          margin-left: 20px;
+          transition: all .3s;
+        }
+      }
+      &:hover {
+        & div {
+          color: purple;
+        }
+      }
+    }
   }
 }

@@ -21,15 +21,21 @@
         <div class="container">
           <div class="navbar">
             <div class="logo">
-              <a href="#">
+              <a href="">
                 <img src="img/logo.png" alt="" />
               </a>
             </div>
             <div class="menu">
               <ul class="menu__list">
-                <li class="menu__list-item"><a href="#">About</a></li>
-                <li class="menu__list-item"><a href="#">Portfolio</a></li>
-                <li class="menu__list-item"><a href="#">Contacts</a></li>
+                <li class="menu__list-item">
+                  <a data-scroll href="#about">Обо мне</a>
+                </li>
+                <li class="menu__list-item">
+                  <a data-scroll href="#portfolio">Портфолио</a>
+                </li>
+                <li class="menu__list-item">
+                  <a data-scroll href="#contacts">Контакты</a>
+                </li>
               </ul>
             </div>
             <div class="burger">
@@ -63,19 +69,15 @@
       <div
         class="header__main"
         style="background-image: url('img/main-bg.jpg')"
-      >
-        <div class="container">
-          <div class="header__inner"></div>
-        </div>
-      </div>
+      ></div>
     </header>
 
     <main class="main">
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="about__inner">
             <div class="about__body">
-              <h3 class="about__title">About me</h3>
+              <h3 class="about__title">Обо мне</h3>
               <div class="about__info">
                 <p>
                   Всем Привет! Меня Зовут Сергей, я фрилансер Веб-разработчик. В
@@ -109,10 +111,10 @@
         </div>
       </section>
 
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="container">
           <div class="portfolio__inner">
-            <h3 class="portfolio__title">Portfolio</h3>
+            <h3 class="portfolio__title">Мое портфолио</h3>
             <div class="portfolio__body">
               <div class="portfolio__item">
                 <div class="item__overlay-top">
@@ -166,7 +168,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container">
           <div class="contacts__inner">
             <form>
@@ -184,28 +186,30 @@
               <button type="submit">Отправить</button>
             </form>
             <div class="contacts__links">
-              <div class="cv">
-                <a href="#">Скачать мое CV</a>
-              </div>
+              <div class="cv">Скачать мое <a href="#">CV</a></div>
               <div class="socials contacts__socials">
                 <div class="socials__item">
                   <a href="#">
+                    <img height="60" src="img/icons/link.svg" alt="" />
+                    <div>LinkedIn</div>
+                  </a>
+                </div>
+                <div class="socials__item">
+                  <a href="#">
                     <img height="60" src="img/icons/github.svg" alt="" />
+                    <div>Github</div>
                   </a>
                 </div>
                 <div class="socials__item">
                   <a href="#">
                     <img height="60" src="img/icons/gmail.svg" alt="" />
-                  </a>
-                </div>
-                <div class="socials__item">
-                  <a href="#">
-                    <img height="60" src="img/icons/link.svg" alt="" />
+                    <div>Gmail</div>
                   </a>
                 </div>
                 <div class="socials__item">
                   <a href="#">
                     <img height="60" src="img/icons/telegram.svg" alt="" />
+                    <div>Telegram</div>
                   </a>
                 </div>
               </div>
@@ -215,9 +219,19 @@
       </section>
     </main>
 
+    <div class="call">
+      <div class="call__inner">
+        <span>Написать мне</span>
+      </div>
+    </div>
+
     <!-- Библиотеки, скрипты из CDN... -->
 
     <!-- Cкрипты (удалить все, кроме scripts.min.js перед билдом) -->
+
+    <script src="./js/smooth-scroll.min(lib).js"></script>
+    <script src="./js/main.js"></script>
+
     <script src="./js/scripts.min.js"></script>
   </body>
 </html>
