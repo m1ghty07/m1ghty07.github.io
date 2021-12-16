@@ -21,7 +21,8 @@
     box-shadow: -5px -5px 5px -5px rgba(238, 240, 242, 0.6) inset;
   }
   &__item {
-    background-color: lime;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 20px;
     width: 300px;
     min-height: 200px;
@@ -29,12 +30,16 @@
     cursor: pointer;
     overflow: hidden;
     transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .item__overlay-top {
-      background-color: rgba(255, 255, 255, 0.342);
+      background-color: rgba(255, 255, 255, 0.5);
       position: absolute;
       top: 0%;
       left: 0;
       right: 0;
+      color: purple;
       bottom: 150%;
       opacity: 0;
       display: flex;
@@ -43,8 +48,10 @@
       transition: all 0.5s;
     }
 
+    
+
     .item__overlay-bottom {
-      background-color: rgba(128, 0, 128, 0.397);
+      background-color: rgba(128, 0, 128, 0.5);
       position: absolute;
       top: 150%;
       left: 0;
@@ -62,6 +69,9 @@
       .item__overlay-top {
         bottom: 50%;
         opacity: 1;
+      }
+      .item__title {
+        opacity: 0;
       }
     }
   }

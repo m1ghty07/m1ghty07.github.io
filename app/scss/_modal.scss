@@ -1,43 +1,60 @@
 // ************************ Модальное окно ************************ //
 // mf
 .modal__wrapper {
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    display: none;
-        .modal {
-            background: white;
-            padding: 25px;
-            border-radius: 5px;
-            height: 350px;
-            width: 300px;
-                &__title {
-                    text-align: center;
-                }
-                &__close{
-                    cursor: pointer;
-                    display: flex;
-                    justify-content: flex-end;
-                }
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  display: none;
+  .modal {
+    background-color: rgba(128, 0, 128, 0.829);
+    padding: 20px 40px;
+    width: 375px;
+    border-radius: 20px;
+    &__title {
+      text-align: center;
+    }
+    &__close {
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
+    }
+    &__body {
+      & form {
+        display: flex;
+        flex-direction: column;
+      }
+      & input,
+      textarea {
+        color: white;
+        background-color: transparent;
+        border: 1px solid gray;
+      }
+      & input {
+        padding: 5px 10px;
+      }
+      & textarea {
+        resize: none;
+      }
+      & button {
+        margin-top: 20px;
+        border: 1px solid purple;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          background-color: rgb(128, 0, 128);
         }
+      }
+    }
+  }
 }
 
 // ************************ Кнопка вызова модального окна ************************ //
-.modal__btn  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 30px;
-    height: 50px;
-    width: 150px;
-    cursor: pointer;
-}
-

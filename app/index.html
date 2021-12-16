@@ -28,13 +28,13 @@
             <div class="menu">
               <ul class="menu__list">
                 <li class="menu__list-item">
-                  <a data-scroll href="#about">Обо мне</a>
+                  <a href="#about">Обо мне</a>
                 </li>
                 <li class="menu__list-item">
-                  <a data-scroll href="#portfolio">Портфолио</a>
+                  <a href="#portfolio">Портфолио</a>
                 </li>
                 <li class="menu__list-item">
-                  <a data-scroll href="#contacts">Контакты</a>
+                  <a href="#contacts">Контакты</a>
                 </li>
               </ul>
             </div>
@@ -43,22 +43,24 @@
             </div>
             <div class="socials">
               <div class="socials__item">
-                <a href="#">
+                <a href="https://github.com/m1ghty07">
                   <img height="20" src="img/icons/github.svg" alt="" />
                 </a>
               </div>
               <div class="socials__item">
-                <a href="#">
+                <a href="dulchenko.su@gmail.com">
                   <img height="20" src="img/icons/gmail.svg" alt="" />
                 </a>
               </div>
               <div class="socials__item">
-                <a href="#">
+                <a
+                  href="https://www.linkedin.com/in/serhii-dulchenko-2aa3151ba/"
+                >
                   <img height="20" src="img/icons/link.svg" alt="" />
                 </a>
               </div>
               <div class="socials__item">
-                <a href="#">
+                <a href="https://t.me/m1ghty07">
                   <img height="20" src="img/icons/telegram.svg" alt="" />
                 </a>
               </div>
@@ -116,54 +118,6 @@
           <div class="portfolio__inner">
             <h3 class="portfolio__title">Мое портфолио</h3>
             <div class="portfolio__body">
-              <div class="portfolio__item">
-                <div class="item__overlay-top">
-                  <a href="">Github Pages</a>
-                </div>
-                <div class="item__overlay-bottom">
-                  <a href="">Source code</a>
-                </div>
-              </div>
-              <div class="portfolio__item">
-                <div class="item__overlay-top">
-                  <a href="">Github Pages</a>
-                </div>
-                <div class="item__overlay-bottom">
-                  <a href="">Source code</a>
-                </div>
-              </div>
-              <div class="portfolio__item">
-                <div class="item__overlay-top">
-                  <a href="">Github Pages</a>
-                </div>
-                <div class="item__overlay-bottom">
-                  <a href="">Source code</a>
-                </div>
-              </div>
-              <div class="portfolio__item">
-                <div class="item__overlay-top">
-                  <a href="">Github Pages</a>
-                </div>
-                <div class="item__overlay-bottom">
-                  <a href="">Source code</a>
-                </div>
-              </div>
-              <div class="portfolio__item">
-                <div class="item__overlay-top">
-                  <a href="">Github Pages</a>
-                </div>
-                <div class="item__overlay-bottom">
-                  <a href="">Source code</a>
-                </div>
-              </div>
-              <div class="portfolio__item">
-                <div class="item__overlay-top">
-                  <a href="">Github Pages</a>
-                </div>
-                <div class="item__overlay-bottom">
-                  <a href="">Source code</a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -189,25 +143,27 @@
               <div class="cv">Скачать мое <a href="#">CV</a></div>
               <div class="socials contacts__socials">
                 <div class="socials__item">
-                  <a href="#">
+                  <a
+                    href="https://www.linkedin.com/in/serhii-dulchenko-2aa3151ba/"
+                  >
                     <img height="60" src="img/icons/link.svg" alt="" />
                     <div>LinkedIn</div>
                   </a>
                 </div>
                 <div class="socials__item">
-                  <a href="#">
+                  <a href="https://github.com/m1ghty07">
                     <img height="60" src="img/icons/github.svg" alt="" />
                     <div>Github</div>
                   </a>
                 </div>
                 <div class="socials__item">
-                  <a href="#">
+                  <a href="dulchenko.su@gmail.com">
                     <img height="60" src="img/icons/gmail.svg" alt="" />
                     <div>Gmail</div>
                   </a>
                 </div>
                 <div class="socials__item">
-                  <a href="#">
+                  <a href="https://t.me/m1ghty07">
                     <img height="60" src="img/icons/telegram.svg" alt="" />
                     <div>Telegram</div>
                   </a>
@@ -225,11 +181,36 @@
       </div>
     </div>
 
+    <div class="modal__wrapper">
+      <div class="modal">
+        <div class="modal__close">
+          <img src="./img/cancel.svg" alt="cancel" width="10px" height="10px" />
+        </div>
+        <div class="modal__title"><span>Заголовок</span></div>
+        <div class="modal__body">
+          <form>
+            <label for="name">Имя</label>
+            <input type="text" id="name" placeholder="Имя" />
+            <label for="email">Почта</label>
+            <input type="email" id="email" placeholder="Почта" />
+            <label for="message">Сообщение</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- <a href="#" class="btn modal__btn">Открыть</a> -->
+
     <!-- Библиотеки, скрипты из CDN... -->
 
     <!-- Cкрипты (удалить все, кроме scripts.min.js перед билдом) -->
-
-    <script src="./js/smooth-scroll.min(lib).js"></script>
+    <script src="./js/modals.js"></script>
     <script src="./js/main.js"></script>
 
     <script src="./js/scripts.min.js"></script>
