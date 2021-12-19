@@ -3,7 +3,7 @@ nav {
   overflow: hidden;
   border-bottom: 2px solid purple;
   &.fixed__nav {
-    background: green;
+    background: black;
     position: fixed;
     left: 0;
     right: 0;
@@ -34,6 +34,9 @@ nav {
         transition: border-bottom 0.3s;
         &:hover {
           border-bottom: 2px solid purple;
+          @media (max-width: 768px) {
+            border-bottom: 0px;
+          }
         }
         &:last-child {
           margin-right: 0;
@@ -72,16 +75,13 @@ nav {
   top: 0;
   bottom: 0;
   left: 0;
-  background: rgba(18, 105, 146, 1);
+  background: rgba(128, 0, 128, 0.561);
   z-index: 101 !important;
   margin: 0;
   padding: 0;
   justify-content: center;
   align-items: center;
 }
-
-// Тут указываем тот брейкпоинт, на котором нам нужно прятать обычное меню и показывать уже бургер.
-// Так же это значение ставим в файле navbar.js
 @media screen and (max-width: 768px) {
   .burger {
     display: block;
@@ -92,13 +92,13 @@ nav {
     cursor: pointer;
     &.active-burger {
       &:before {
-        background: rgb(0, 0, 0);
+        background: white;
         transform: rotate(45deg);
         transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
         top: 8px;
       }
       &:after {
-        background: rgb(0, 0, 0);
+        background: white;
         transform: rotate(-45deg);
         bottom: 10px;
         transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
@@ -139,8 +139,12 @@ nav {
     &-item {
       margin-right: 0 !important;
       a {
-        color: black;
+        color: white;
+        font-size: 36px;
       }
+    }
+    &-item {
+      margin: 20px 0;
     }
   }
 }
