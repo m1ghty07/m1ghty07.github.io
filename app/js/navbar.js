@@ -1,4 +1,3 @@
-// Мобильное меню бургер
 function burgerMenu() {
     let burger = document.querySelector('.burger')
     let menu = document.querySelector('.menu__list')
@@ -11,7 +10,6 @@ function burgerMenu() {
         burger.classList.remove('active-burger')
       }
     })
-    // Вот тут мы ставим брейкпоинт навбара
     window.addEventListener('resize', () => {
       if (window.innerWidth > 768) {
           menu.classList.remove('active')
@@ -22,12 +20,9 @@ function burgerMenu() {
 burgerMenu()
 
 
-// Вызываем эту функцию, если нам нужно зафиксировать меню при скролле.
 function fixedNav() {
   const nav = document.querySelector('nav')
-
-  // тут указываем в пикселях, сколько нужно проскроллить что бы наше меню стало фиксированным
-  const breakpoint = 500 
+  const breakpoint = 100 
   if ( window.scrollY >= breakpoint) {
     nav.classList.add('fixed__nav')
   } else {

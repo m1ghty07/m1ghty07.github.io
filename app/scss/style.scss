@@ -1,6 +1,12 @@
 // ************************ SCSS ************************ //
 @import "navbar";
+@import "modal";
 @import "vars";
+@import "sections/header";
+@import "sections/about";
+@import "sections/portfolio";
+@import "sections/contacts";
+@import "components/call";
 
 @media (max-width: 768px) {
 }
@@ -14,7 +20,7 @@
 }
 
 body {
-  color: #fff;
+  color: white;
 }
 
 .container {
