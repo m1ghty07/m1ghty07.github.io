@@ -1,0 +1,30 @@
+[
+ {
+  "bg": "./img/projects/oku.jpg",
+  "source": null,
+  "github": "https://m1ghty07.github.io/Oku/",
+  "id": "1",
+  "title": "Oku"
+ },
+ {
+  "bg": "./img/projects/badami.jpg",
+  "source": "https://m1ghty07.github.io/badami-build/",
+  "github": "https://github.com/m1ghty07/badami",
+  "id": "2",
+  "title": "Badami Court"
+ },
+ {
+  "bg": "./img/projects/smeta.jpg",
+  "source": null,
+  "github": "https://m1ghty07.github.io/smetaplan/",
+  "id": "3",
+  "title": "Сметаплан"
+ },
+ {
+  "bg": "./img/projects/coffee.jpg",
+  "source": "https://github.com/m1ghty07/coffe-shop-dev",
+  "github": "https://m1ghty07.github.io/coffee-shop/",
+  "id": "4",
+  "title": "Coffee"
+ }
+]
